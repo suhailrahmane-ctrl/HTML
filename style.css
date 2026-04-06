@@ -1,1 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif; /* فونت کلی صفحه */
+    background-color: #f4f7f6; /* رنگ پس‌زمینه روشن */
+    display: flex; /* استفاده از فلکس‌باکس برای چیدمان */
+    justify-content: center; /* مرکز کردن محتوا در افقی */
+    align-items: center; /* مرکز کردن محتوا در عمودی */
+    min-height: 100vh; /* حداقل ارتفاع صفحه برابر با ارتفاع صفحه نمایش */
+    margin: 0; /* حذف حاشیه پیش‌فرض بدنه */
+    padding: 20px; /* اضافه کردن کمی پدینگ دور صفحه */
+    box-sizing: border-box; /* اطمینان از اینکه پدینگ به اندازه کلی اضافه نمی‌شود */
+}
 
+.container {
+    background-color: #ffffff; /* پس‌زمینه سفید برای کانتینر */
+    padding: 30px; /* پدینگ داخلی کانتینر */
+    border-radius: 8px; /* گوشه‌های گرد برای کانتینر */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه ملایم برای برجسته کردن */
+    text-align: center; /* مرکز کردن متن داخل کانتینر */
+    width: 100%; /* عرض کامل در موبایل */
+    max-width: 500px; /* حداکثر عرض برای جلوگیری از کشیدگی زیاد */
+}
+
+h1 {
+    color: #333; /* رنگ تیره برای عنوان */
+    margin-bottom: 20px; /* فاصله زیر عنوان */
+    font-size: 24px; /* اندازه فونت عنوان */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* عرض ورودی، با در نظر گرفتن پدینگ */
+    padding: 12px 10px; /* پدینگ داخلی فیلد ورودی */
+    margin-bottom: 15px; /* فاصله زیر فیلد ورودی */
+    border: 1px solid #ccc; /* حاشیه خاکستری */
+    border-radius: 5px; /* گوشه‌های گرد برای فیلد ورودی */
+    font-size: 16px; /* اندازه فونت فیلد ورودی */
+    box-sizing: border-box; /* اطمینان از اینکه پدینگ به عرض اضافه نمی‌شود */
+}
+
+button {
+    background-color: #007bff; /* رنگ آبی برای دکمه */
+    color: white; /* رنگ سفید متن دکمه */
+    padding: 12px 20px; /* پدینگ داخلی دکمه */
+    border: none; /* حذف حاشیه پیش‌فرض دکمه */
+    border-radius: 5px; /* گوشه‌های گرد برای دکمه */
+    cursor: pointer; /* تغییر نشانگر موس به دست */
+    font-size: 16px; /* اندازه فونت دکمه */
+    transition: background-color 0.3s ease; /* انیمیشن تغییر رنگ پس‌زمینه */
+}
+
+button:hover {
+    background-color: #0056b3; /* رنگ آبی تیره‌تر هنگام هاور */
+}
+
+#results {
+    margin-top: 25px; /* فاصله بالای بخش نتایج */
+    text-align: left; /* چیدمان نتایج به سمت چپ */
+    color: #555; /* رنگ متن نتایج */
+    font-size: 15px; /* اندازه فونت نتایج */
+}
+
+#results p {
+    margin-bottom: 10px; /* فاصله بین هر پاراگراف نتیجه */
+    padding: 8px; /* پدینگ داخلی برای هر نتیجه */
+    background-color: #e9ecef; /* پس‌زمینه کمی تیره‌تر برای هر نتیجه */
+    border-radius: 4px; /* گوشه‌های گرد برای هر نتیجه */
+}
+
+/* استایل برای نمایش پیام "موبایل یافت نشد" */
+.no-results {
+    color: #dc3545; /* رنگ قرمز برای هشدار */
+    font-weight: bold;
+}
